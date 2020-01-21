@@ -39,8 +39,14 @@ public class MainActivity extends AppCompatActivity {
         isRunning = false;
     }
 
-    //Reset timer when Reste button is clicked
+    //Reset timer when Reset button is clicked
     public void onClickReset(View view){
+        isRunning = false;
+        seconds = 1500;
+    }
+
+    //Reset timer when Finish button is clicked
+    public void onClickFinish(View view){
         isRunning = false;
         seconds = 1500;
     }
